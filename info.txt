@@ -1,0 +1,4 @@
+wsl
+~/workspace/nuxt3-projects/nuxt3-app
+npm run dev
+http://localhost:3000/
