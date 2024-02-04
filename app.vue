@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1>{{ message }}</h1>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
-<script setup>
-const message = ref('hello')
-</script>
