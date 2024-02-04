@@ -1,12 +1,32 @@
 <template>
+  <div>
+    <h1>Top Page</h1>
+    <hr>
+    <div>NuxtLink</div>
+    <NuxtLink to="/price">Price</NuxtLink>
+    <hr>
+    <div>useStateでテキストを変更</div>
+    <div>{{ text }}</div>
+    <button @click="textState.changeText('Text Changed.')">changeText</button>
+    <hr>
+    <div>useStateでカウンタを変更</div>
+    <div>{{ counter }}</div>
     <div>
-      <h1>Top Page</h1>
-      <hr>
-      <NuxtLink to="/price">Price</NuxtLink>
-      <div>
-        <img width="300" src="~/assets/cat.jpg" alt="cat">
-      </div>
+      <button @click="counterStore.up">+</button>
+      <button @click="counterStore.down">-</button>
+      <button @click="counterStore.reset">reset</button>
     </div>
-  </template>
-  <script setup>
-  </script>
+    <hr>
+    <div>assets</div>
+    <div>
+      <img width="300" src="~/assets/cat.jpg" alt="cat">
+    </div>
+  </div>
+</template>
+<script setup>
+const textState = useText()
+const { text } = textState
+
+const counterStore = useCounterState()
+const { counter } = counterStore
+</script>
