@@ -14,4 +14,8 @@ footer {
     color: white;
     text-align: center;
 }
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
 </style>
