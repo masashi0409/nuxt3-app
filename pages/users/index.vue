@@ -1,8 +1,16 @@
 <template>
+  <div>
+    <h1>Users Top Page</h1>
+    <hr>
     <div>
-      <h1>Users Top Page</h1>
-      <hr>
+      <ul>
+        <li v-for="user in users" :key="user.id">
+          {{ user.id }}, {{ user.name }}
+        </li>
+      </ul>
     </div>
-  </template>
-  <script setup>
-  </script>
+  </div>
+</template>
+<script setup>
+  const { data: users } = await useFetch('https://jsonplaceholder.typicode.com/users')
+</script>
