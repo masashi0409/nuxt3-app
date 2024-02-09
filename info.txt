@@ -1,3 +1,5 @@
+https://www.udemy.com/course/nuxtjs-the-complete-guide/
+
 wsl
 ~/workspace/nuxt3-projects/nuxt3-app
 npm run dev
