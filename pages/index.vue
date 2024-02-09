@@ -3,7 +3,8 @@
     <h1>Top Page</h1>
     <hr>
     <div>NuxtLink</div>
-    <NuxtLink to="/users">Users</NuxtLink>
+    <NuxtLink to="/users">Users</NuxtLink><br>
+    <NuxtLink to="/tasks">Tasks</NuxtLink>
     <hr>
     <div>useStateでテキストを変更</div>
     <div>{{ text }}</div>
@@ -12,9 +13,9 @@
     <div>useStateでカウンタを変更</div>
     <div>{{ counter }}</div>
     <div>
-      <button @click="counterStore.up">+</button>
-      <button @click="counterStore.down">-</button>
       <button @click="counterStore.reset">reset</button>
+      <button @click="counterStore.down">-</button>
+      <button @click="counterStore.up">+</button>
     </div>
     <hr>
     <div>assets</div>
