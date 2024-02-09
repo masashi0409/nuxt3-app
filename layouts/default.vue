@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <slot />
-        <footer>&copy; proglus.jp</footer>
+        <footer>&copy; footer</footer>
     </div>
 </template>
 <style>

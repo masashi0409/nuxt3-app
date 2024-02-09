@@ -3,7 +3,7 @@
     <h1>Top Page</h1>
     <hr>
     <div>NuxtLink</div>
-    <NuxtLink to="/price">Price</NuxtLink>
+    <NuxtLink to="/users">Users</NuxtLink>
     <hr>
     <div>useStateでテキストを変更</div>
     <div>{{ text }}</div>
